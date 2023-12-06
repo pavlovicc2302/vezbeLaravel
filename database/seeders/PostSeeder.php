@@ -13,8 +13,19 @@ class PostSeeder extends Seeder
      */
     public function run(): void
     {
-        Post::create(['title'=>'Post 5',
-        'excerpt'=>'Pocetak posta 5',
-        'body'=>'Ceo tekst posta 6']);
+        Post::create(['title'=>'Post 1',
+        'category_id'=>'1',
+        'excerpt'=>'Pocetak posta 1',
+        'body'=>'Ceo tekst posta 1']);
+
+        Post::create(['title'=>'Post 2',
+        'category_id'=>'1',
+        'excerpt'=>'Pocetak posta 2',
+        'body'=>'Ceo tekst posta 2']);
+
+        Post::create(['title'=>'Post 3',
+        'category_id'=>'2',
+        'excerpt'=>'Pocetak pos[ta 3',
+        'body'=>'Ceo tekst posta 3']);
     }
 }

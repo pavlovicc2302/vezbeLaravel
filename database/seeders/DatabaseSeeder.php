@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         $this->call([
-            PostSeeder::class
+            PostSeeder::class,
+            CategorySeeder::class
         ]); //poziva se DatabaseSeeder koji ce pozvati PostSeeder i onda dodati novi post
     }
 }
